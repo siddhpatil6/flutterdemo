@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_expanded/DashboardScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,30 +32,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Row(
-        children: [
-          Container(
-            width: 50,
-            height: 200,
-            color: Colors.blue,
-          ),
-          Container(
-            width: 50,
-            height: 200,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 200,
-            color: Colors.orange,
-          ),
-          Container(
-            width: 50,
-            height: 200,
-            color: Colors.grey,
-          ),
-        ],
-      ),
+      home: DashboardScreen(),
     );
   }
 }
